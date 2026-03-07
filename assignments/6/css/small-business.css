@@ -7,6 +7,20 @@ body {
   padding-top: 56px;
 }
 
-.bg-secondary {
-  background-color: #555 !important;
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+
+.sr-only-focusable {
+  color: #fff;
+  background-color: #000;
 }
