@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="accessibility, universal design, alternate format, web design, disability, higher education, ADA, Section 508, accommodations, assistive technology, DOJ, Department of Justice, WAI"
+    />
+
+    <title>AHG 2020 Presenter Proposal Form</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700" type="text/css" />
+    <link rel="stylesheet" href="css/ahgformstyle2020after.css" type="text/css" media="screen" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header role="banner">
+      <h1>AHG Presenter Proposal Form 2020</h1>
+      <p>Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" id="content">
+      <p>Please complete the form below to submit your presentation proposal. Fields marked with an asterisk (<abbr title="required">*</abbr>) are required.</p>
+
+      <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
+        <!-- Speaker Information -->
+        <section aria-labelledby="speaker-heading">
+          <h2 id="speaker-heading">Speaker Information</h2>
+
+          <fieldset>
+            <legend>1st Presenter</legend>
+            <ul>
+              <li>
+                <label for="fstspkr1">First Name:<abbr title="required">*</abbr></label>
+                <input id="fstspkr1" name="fstspkr1" type="text" required aria-required="true" />
+              </li>
+              <li>
+                <label for="lstname1">Last Name:<abbr title="required">*</abbr></label>
+                <input id="lstname1" name="lstname1" type="text" required aria-required="true" />
+              </li>
+              <li>
+                <label for="degree1">Highest Academic Degree:<abbr title="required">*</abbr></label>
+                <input id="degree1" name="degree1" type="text" required aria-required="true" />
+              </li>
+              <li>
+                <label for="company1">Institution or Organization:</label>
+                <input id="company1" name="company1" type="text" />
+              </li>
+              <li>
+                <label for="telno1">Phone Number (Format: 123-456-7890):<abbr title="required">*</abbr></label>
+                <input id="telno1" name="telno1" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required aria-required="true" />
+              </li>
+              <li>
+                <label for="email1">Email:<abbr title="required">*</abbr></label>
+                <input id="email1" name="email1" type="email" required aria-required="true" />
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Have you presented at a national conference or taught a college-level, semester-long course?<abbr title="required">*</abbr></legend>
+            <ul class="radio-group">
+              <li>
+                <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" required aria-required="true" />
+                <label for="natconfexp1_yes">Yes</label>
+              </li>
+              <li>
+                <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" />
+                <label for="natconfexp1_no">No</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Presenter 1 Bio</legend>
+            <ul>
+              <li>
+                <label for="Speaker1bio">Please provide a brief bio (100 &ndash; 1500 characters):</label>
+                <textarea id="Speaker1bio" name="Speaker1bio" rows="4" minlength="100" maxlength="1500"></textarea>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+
+        <!-- Proposal Information -->
+        <section aria-labelledby="proposal-heading">
+          <h2 id="proposal-heading">Proposal Information</h2>
+
+          <fieldset>
+            <legend>Title of Proposal<abbr title="required">*</abbr></legend>
+            <ul>
+              <li>
+                <label for="proptitle">Proposal Title (10 &ndash; 150 characters):</label>
+                <input id="proptitle" name="proptitle" type="text" minlength="10" maxlength="150" required aria-required="true" />
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+
+        <input type="submit" value="Submit your proposal" />
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>&copy; 2020 Accessing Higher Ground Conference</p>
+    </footer>
+  </body>
+</html>

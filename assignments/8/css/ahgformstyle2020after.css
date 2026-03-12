@@ -1,0 +1,64 @@
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+header p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label[for='Speaker1bio'] {
+  display: block;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.radio-group li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 16px;
+}
+
+.radio-group label {
+  display: inline;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+textarea:focus,
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  background-color: #fff2a8 !important;
+  color: #bf1722 !important;
+  outline: solid #03c medium;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+}
