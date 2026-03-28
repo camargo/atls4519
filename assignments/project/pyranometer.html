@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyranometer — Skywatch Observatory</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-title">Skywatch Observatory</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Sky Camera</a></li>
+            <li><a href="#">All Sky Image</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header-ticker" aria-label="Current conditions">
+      <div class="container">
+        <span><strong>Pyranometer:</strong> 676 W/m²</span>
+        <span><strong>Pyrgeometer:</strong> 281 W/m²</span>
+        <span><strong>Pyra Diffuse:</strong> 224 W/m²</span>
+        <span><strong>Daily Precip:</strong> 0 mm</span>
+        <span><strong>Rain Intensity:</strong> 0.0 mm/hr</span>
+        <span><strong>Snow Depth:</strong> 10 mm</span>
+        <span><strong>Ozone:</strong> 25 ppb</span>
+        <span><strong>Cloud Base:</strong> No Cloud Base Detected</span>
+        <span>16:37 Mar-28-2026 UTC</span>
+      </div>
+    </div>
+
+    <!-- Page body -->
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Quick links">
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Today's Measurements</h2>
+          <ul class="sidebar-list">
+            <li><a href="pyranometer.html" aria-current="page">Pyranometer</a></li>
+            <li><a href="#">Pyrgeometer</a></li>
+            <li><a href="#">Total/Diffuse Pyranometer</a></li>
+            <li><a href="#">Ceilometer</a></li>
+            <li><a href="#">Sunphotometer</a></li>
+            <li><a href="#">Rain Gauge</a></li>
+            <li><a href="#">Laser Disdrometer</a></li>
+            <li><a href="#">Micro Rain Radar</a></li>
+            <li><a href="#">Ozone</a></li>
+          </ul>
+        </div>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-heading">Extended Plots</summary>
+          <ul class="sidebar-list">
+            <li><a href="#">Pyranometer 7-Day</a></li>
+            <li><a href="#">Snow Depth 7-Day</a></li>
+            <li><a href="#">Ceilometer 24-Hour</a></li>
+            <li><a href="#">Net Radiometer</a></li>
+          </ul>
+        </details>
+
+        <details class="sidebar-section" open>
+          <summary class="sidebar-heading">Archives</summary>
+          <ul class="sidebar-list">
+            <li><a href="archives.html">Routine Observations</a></li>
+            <li><a href="#">Special Event Observations</a></li>
+          </ul>
+        </details>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Resources</h2>
+          <ul class="sidebar-list">
+            <li><a href="#">Instrument Information</a></li>
+            <li><a href="#">Teaching &amp; Publications</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main id="main" class="content">
+        <h1>Pyranometer</h1>
+        <p>
+          The Kipp &amp; Zonen CMP 3 pyranometer measures shortwave solar irradiance (W/m²) incident on a horizontal surface. The plot below shows the latest
+          24-hour time series.
+        </p>
+
+        <div class="instrument-card">
+          <h2>24-Hour Time Series</h2>
+          <img
+            src="images/pyranometer-irradiance.png"
+            alt="24-hour pyranometer time series for March 22, 2026, showing shortwave surface irradiance in watts per square meter."
+            width="800"
+            height="450"
+          />
+          <p><strong>Last updated:</strong> <span id="refresh-time">18:27 UTC, March 27, 2026</span></p>
+          <button type="button" class="refresh-btn" id="refresh-btn">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M13.65 2.35A7.96 7.96 0 008 0a8 8 0 108 8h-2a6 6 0 11-1.76-4.24L10 6h6V0l-2.35 2.35z" fill="currentColor" />
+            </svg>
+            Refresh Data
+          </button>
+        </div>
+
+        <h2>About This Instrument</h2>
+        <p>
+          The pyranometer is mounted on the east platform of the Skywatch Observatory on the roof of the Duane Physics Building. It measures the total
+          hemispheric shortwave irradiance from 300 to 2800 nm. Data is recorded every second and averaged over one-minute intervals.
+        </p>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>Department of Atmospheric and Oceanic Sciences (ATOC), University of Colorado Boulder</p>
+        <p>(303) 492-7167 · <a href="mailto:atocasst@colorado.edu">atocasst@colorado.edu</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

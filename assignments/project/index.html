@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skywatch Observatory - CU Boulder</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-title">Skywatch Observatory</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Sky Camera</a></li>
+            <li><a href="#">All Sky Image</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header-ticker" aria-label="Current conditions">
+      <div class="container">
+        <span><strong>Pyranometer:</strong> 676 W/m²</span>
+        <span><strong>Pyrgeometer:</strong> 281 W/m²</span>
+        <span><strong>Pyra Diffuse:</strong> 224 W/m²</span>
+        <span><strong>Daily Precip:</strong> 0 mm</span>
+        <span><strong>Rain Intensity:</strong> 0.0 mm/hr</span>
+        <span><strong>Snow Depth:</strong> 10 mm</span>
+        <span><strong>Ozone:</strong> 25 ppb</span>
+        <span><strong>Cloud Base:</strong> No Cloud Base Detected</span>
+        <span>16:37 Mar-28-2026 UTC</span>
+      </div>
+    </div>
+
+    <!-- Page body -->
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Quick links">
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Today's Measurements</h2>
+          <ul class="sidebar-list">
+            <li><a href="pyranometer.html">Pyranometer</a></li>
+            <li><a href="#">Pyrgeometer</a></li>
+            <li><a href="#">Total/Diffuse Pyranometer</a></li>
+            <li><a href="#">Ceilometer</a></li>
+            <li><a href="#">Sunphotometer</a></li>
+            <li><a href="#">Rain Gauge</a></li>
+            <li><a href="#">Laser Disdrometer</a></li>
+            <li><a href="#">Micro Rain Radar</a></li>
+            <li><a href="#">Ozone</a></li>
+          </ul>
+        </div>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-heading">Extended Plots</summary>
+          <ul class="sidebar-list">
+            <li><a href="#">Pyranometer 7-Day</a></li>
+            <li><a href="#">Snow Depth 7-Day</a></li>
+            <li><a href="#">Ceilometer 24-Hour</a></li>
+            <li><a href="#">Net Radiometer</a></li>
+          </ul>
+        </details>
+
+        <details class="sidebar-section" open>
+          <summary class="sidebar-heading">Archives</summary>
+          <ul class="sidebar-list">
+            <li><a href="archives.html">Routine Observations</a></li>
+            <li><a href="#">Special Event Observations</a></li>
+          </ul>
+        </details>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Resources</h2>
+          <ul class="sidebar-list">
+            <li><a href="#">Instrument Information</a></li>
+            <li><a href="#">Teaching &amp; Publications</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main id="main" class="content">
+        <h1>Skywatch Observatory</h1>
+        <p>
+          Skywatch is a rooftop atmospheric monitoring station on the Duane Physics Building at the University of Colorado Boulder, operated by the Department
+          of Atmospheric and Oceanic Sciences (ATOC). The station provides real-time and archived measurements of solar radiation, ozone, precipitation, cloud
+          height, and other atmospheric variables.
+        </p>
+
+        <!-- Platform images -->
+        <div class="platform-images">
+          <figure>
+            <img src="images/east.jpg" alt="East platform instruments including the pyranometer and pyrgeometer." width="600" height="400" />
+            <figcaption>East Platform Instrumentation</figcaption>
+          </figure>
+          <figure>
+            <img src="images/west.jpg" alt="West platform instruments including the rain gauge and disdrometer." width="600" height="400" />
+            <figcaption>West Platform Instrumentation</figcaption>
+          </figure>
+        </div>
+
+        <div class="platform-images">
+          <figure>
+            <img src="images/pyranometer.jpg" alt="Kipp and Zonen CMP 3 pyranometer on the observatory platform." width="400" height="300" />
+            <figcaption>Kipp &amp; Zonen CMP 3 Pyranometer</figcaption>
+          </figure>
+        </div>
+
+        <div class="news-box">
+          <h2>News</h2>
+          <dl>
+            <dt>July 18, 2017</dt>
+            <dd>SPN1 added to the Skywatch instrument suite. The instrument provides total (global) and diffuse irradiances.</dd>
+            <dt>April 10, 2014</dt>
+            <dd>
+              The Thermo Environmental UV Photometric Ozone Monitor is running again after replacing the lamp. We were lucky to find a replacement bulb at
+              Jelight Company in Irvine, California.
+            </dd>
+          </dl>
+        </div>
+
+        <!-- Instrumentation -->
+        <h2>Instrumentation</h2>
+        <p>
+          The observatory houses nine instruments that continuously measure atmospheric conditions. Select an instrument from the sidebar or the navigation menu
+          to view today's data.
+        </p>
+        <ul>
+          <li><a href="pyranometer.html">Pyranometer</a> — shortwave solar irradiance</li>
+          <li><a href="#">Pyrgeometer</a> — longwave infrared irradiance</li>
+          <li><a href="#">Total/Diffuse Pyranometer</a> — direct vs. diffuse radiation</li>
+          <li><a href="#">Ceilometer</a> — cloud base height</li>
+          <li><a href="#">Sunphotometer</a> — aerosol optical depth</li>
+          <li><a href="#">Rain Gauge</a> — precipitation accumulation</li>
+          <li><a href="#">Laser Disdrometer</a> — raindrop size distribution</li>
+          <li><a href="#">Micro Rain Radar</a> — vertical rain profiles</li>
+          <li><a href="#">Ozone Monitor</a> — surface ozone concentration</li>
+        </ul>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>Department of Atmospheric and Oceanic Sciences (ATOC), University of Colorado Boulder</p>
+        <p>(303) 492-7167 · <a href="mailto:atocasst@colorado.edu">atocasst@colorado.edu</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

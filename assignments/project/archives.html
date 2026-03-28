@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine Observations — Skywatch Observatory</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="site-title">Skywatch Observatory</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Sky Camera</a></li>
+            <li><a href="#">All Sky Image</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header-ticker" aria-label="Current conditions">
+      <div class="container">
+        <span><strong>Pyranometer:</strong> 676 W/m²</span>
+        <span><strong>Pyrgeometer:</strong> 281 W/m²</span>
+        <span><strong>Pyra Diffuse:</strong> 224 W/m²</span>
+        <span><strong>Daily Precip:</strong> 0 mm</span>
+        <span><strong>Rain Intensity:</strong> 0.0 mm/hr</span>
+        <span><strong>Snow Depth:</strong> 10 mm</span>
+        <span><strong>Ozone:</strong> 25 ppb</span>
+        <span><strong>Cloud Base:</strong> No Cloud Base Detected</span>
+        <span>16:37 Mar-28-2026 UTC</span>
+      </div>
+    </div>
+
+    <!-- Page body -->
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Quick links">
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Today's Measurements</h2>
+          <ul class="sidebar-list">
+            <li><a href="pyranometer.html">Pyranometer</a></li>
+            <li><a href="#">Pyrgeometer</a></li>
+            <li><a href="#">Total/Diffuse Pyranometer</a></li>
+            <li><a href="#">Ceilometer</a></li>
+            <li><a href="#">Sunphotometer</a></li>
+            <li><a href="#">Rain Gauge</a></li>
+            <li><a href="#">Laser Disdrometer</a></li>
+            <li><a href="#">Micro Rain Radar</a></li>
+            <li><a href="#">Ozone</a></li>
+          </ul>
+        </div>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-heading">Extended Plots</summary>
+          <ul class="sidebar-list">
+            <li><a href="#">Pyranometer 7-Day</a></li>
+            <li><a href="#">Snow Depth 7-Day</a></li>
+            <li><a href="#">Ceilometer 24-Hour</a></li>
+            <li><a href="#">Net Radiometer</a></li>
+          </ul>
+        </details>
+
+        <details class="sidebar-section" open>
+          <summary class="sidebar-heading">Archives</summary>
+          <ul class="sidebar-list">
+            <li><a href="archives.html" aria-current="page">Routine Observations</a></li>
+            <li><a href="#">Special Event Observations</a></li>
+          </ul>
+        </details>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-heading">Resources</h2>
+          <ul class="sidebar-list">
+            <li><a href="#">Instrument Information</a></li>
+            <li><a href="#">Teaching &amp; Publications</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main id="main" class="content">
+        <h1>Routine Observations Archive</h1>
+        <p>Retrieve historical observation data from the Skywatch Observatory. Select an instrument and date to view archived measurements.</p>
+        <p><strong>Station coordinates:</strong> 40.01° N, 105.24° W, 1603 m elevation.</p>
+
+        <form id="archive-form" class="instrument-card" action="data.html">
+          <div class="form-group">
+            <label for="archive-instrument">Instrument</label>
+            <select id="archive-instrument" required>
+              <option value="">Select an instrument…</option>
+              <option value="pyranometer">Pyranometer</option>
+              <option value="pyrgeometer">Pyrgeometer</option>
+              <option value="spn">Total/Diffuse Pyranometer</option>
+              <option value="ceilometer">Ceilometer</option>
+              <option value="sunphotometer">Sunphotometer</option>
+              <option value="rain">Rain Gauge</option>
+              <option value="disdrometer">Laser Disdrometer</option>
+              <option value="mrr">Micro Rain Radar</option>
+              <option value="ozone">Ozone</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="archive-year">Year</label>
+            <select id="archive-year" required>
+              <option value="">Select a year…</option>
+              <option>2026</option>
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="archive-month">Month</label>
+            <select id="archive-month" required>
+              <option value="">Select a month…</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="archive-day">Day</label>
+            <select id="archive-day" required>
+              <option value="">Select a day…</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+          </div>
+
+          <button type="submit" class="form-submit">Retrieve Data</button>
+        </form>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>Department of Atmospheric and Oceanic Sciences (ATOC), University of Colorado Boulder</p>
+        <p>(303) 492-7167 · <a href="mailto:atocasst@colorado.edu">atocasst@colorado.edu</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
